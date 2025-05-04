@@ -324,7 +324,6 @@ async def socketReceiver(client, token):
             data = json.loads(data)
         except json.JSONDecodeError:
             continue
-        print(data)
 
         type = data.get("type", None)
 

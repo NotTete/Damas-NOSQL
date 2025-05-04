@@ -188,5 +188,4 @@ def win(board):
         for y in range(8):
             pos += board[y][x] > 0
             neg += board[y][x] < 0
-    print(neg, pos, (neg > 0) - (pos > 0))
     return (neg > 0) - (pos > 0)
