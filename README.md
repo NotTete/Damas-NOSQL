@@ -43,32 +43,5 @@ Una vez esté corriendo el servidor podemos acceder a través del puerto `5000`.
 
 ![Partida](/img/playing.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Enlace a github
+## Enlace a github
 [https://github.com/NotTete/Damas-NOSQL](https://github.com/NotTete/Damas-NOSQL)
