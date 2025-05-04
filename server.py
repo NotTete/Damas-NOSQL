@@ -1,6 +1,8 @@
 '''
     Script con servidor web que usa como base Redis
     para jugar a las damas a través de la web
+
+    Autor: Jorge Hernández Palop
 '''
 
 from quart import Quart, render_template, request, jsonify, websocket
