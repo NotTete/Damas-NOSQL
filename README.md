@@ -7,7 +7,7 @@ Este repositorio contiene los archivos para la práctica final de la asignatura 
 La práctica consiste en un __servidor web__ conectado a una base de datos de __Redis__ para jugar a las damas en el navegador.
 
 
-El __frontend__ está hecho JavaScript y la única dependencia es Bootstrap para los estilos de la web. Para comunicarse con el servidor uso
+El __frontend__ está hecho en JavaScript y la única dependencia es Bootstrap para los estilos de la web. Para comunicarse con el servidor uso
 websockets. 
 
 El __backend__ está hecho en Python por medio de la librería __Quart__ que permite hacer servidores web al estilo de Flask de manera
