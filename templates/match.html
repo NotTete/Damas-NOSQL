@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center" id="main-div">
+    <div id="status-div" class="d-flex flex-column justify-content-center align-items-center"><h2>Waiting server response...</h2></div>
+    <canvas id="boardCanvas" width="500" height="500"></canvas>
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script type="module" src="{{ url_for('static', filename='/script/websocket.js') }}"></script>
+<script type="module" src="{{ url_for('static', filename='/script/board.js') }}"></script>
+{% endblock %}

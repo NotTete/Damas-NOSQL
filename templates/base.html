@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkmate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+    <script src="{{ url_for('static', filename='script/bootstrap.js') }}"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>

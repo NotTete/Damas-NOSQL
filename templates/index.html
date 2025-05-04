@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  <h1 class="fw-bold">Checkers</h1>
+  <form>
+      <div class="form-row">
+          <div class="col">
+              <div class="form-group">
+                  <input type="text" class="form-control" id="playerName" placeholder="Enter your name" required>
+              </div>
+          </div>
+          <div class="col">
+              <div class="form-group">
+                  <input type="text" class="form-control" id="gameCode" placeholder="Enter game code (optional)">
+              </div>
+          </div>
+      </div>
+      <button type="button" id="joinButton" class="btn btn-primary btn-block">Join Game</button>
+      <button type="button" id="createButton" class="btn btn-success btn-block">Create Game</button>
+  </form>
+  <div>
+    <div class="m-5 text-danger fw-semibold opacity-0" id="errorText">a</div>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='/script/buttons.js') }}"></script>
+{% endblock %}
