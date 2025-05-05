@@ -172,7 +172,8 @@ async def matchEventQueue(client: redis.Redis):
     while True:
         # Obtenemos el mensaje y vemos de quién, qué partida es y el tipo de mensaje
         message = await getQueueMsg(client, "match:queue")
-        
+        if message is None: continue
+
         type = message.get("type", None)
         match = message.get("match", None)
         user = message.get("user", None)
